@@ -1,0 +1,55 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            106.697,
+            10.81,
+            46.81
+        ]
+    },
+    "properties": {
+        "parameter": {
+            "T2M": {
+                "202501": 24.86,
+                "202502": 27.59,
+                "202503": 30.09,
+                "202504": 30.98,
+                "202505": 29.8,
+                "202506": 27.42,
+                "202507": 27.39,
+                "202508": 26.92,
+                "202509": 26.66,
+                "202510": 26.83,
+                "202511": -999.0,
+                "202512": -999.0,
+                "202513": -999.0
+            }
+        }
+    },
+    "header": {
+        "title": "NASA/POWER Source Native Resolution Monthly and Annual",
+        "api": {
+            "version": "v2.8.0",
+            "name": "POWER Monthly and Annual API"
+        },
+        "sources": [
+            "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20250101",
+        "end": "20251231"
+    },
+    "messages": [],
+    "parameters": {
+        "T2M": {
+            "units": "C",
+            "longname": "Temperature at 2 Meters"
+        }
+    },
+    "times": {
+        "data": 2.1,
+        "process": 0.07
+    }
+}
