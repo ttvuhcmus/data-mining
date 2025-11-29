@@ -269,13 +269,13 @@ function MapController({
 
 function App() {
   const [points, setPoints] = useState<Point[]>([])
-  const [mapZoom, setMapZoom] = useState<number>(13)
-  const [mapInstance, setMapInstance] = useState<Map | null>(null)
+  const [, setMapZoom] = useState<number>(13)
+  const [, setMapInstance] = useState<Map | null>(null)
   const [isManagementPanelOpen, setIsManagementPanelOpen] = useState<boolean>(false)
   const [isAreaManagementPanelOpen, setIsAreaManagementPanelOpen] = useState<boolean>(false)
   const [isDrawing, setIsDrawing] = useState<boolean>(false)
   const [drawStartPoint, setDrawStartPoint] = useState<L.LatLng | null>(null)
-  const [drawEndPoint, setDrawEndPoint] = useState<L.LatLng | null>(null)
+  const [, setDrawEndPoint] = useState<L.LatLng | null>(null)
   const [drawBounds, setDrawBounds] = useState<L.LatLngBounds | null>(null)
   const [drawnRectangles, setDrawnRectangles] = useState<Array<{
     id: number
@@ -287,7 +287,7 @@ function App() {
     emoji: string
   }>>([])
   const [areaPoints, setAreaPoints] = useState<Point[]>([]) // Điểm từ quét khu vực (tách biệt với điểm click) - dùng để lưu dữ liệu
-  const drawingRef = useRef<boolean>(false)
+  // const drawingRef = useRef<boolean>(false)
 
   // Hàm đọc và xử lý dữ liệu từ nasa.json (monthly format)
   const processNasaData = () => {
